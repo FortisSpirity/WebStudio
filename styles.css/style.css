@@ -1071,6 +1071,10 @@ body {
         width: 344px;
     }
 
+    .header-contacts__link {
+        font-size: 16px;
+    }
+
     .footer-content__social {
         margin-left: 120px;
     }
