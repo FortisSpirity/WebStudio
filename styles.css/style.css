@@ -1024,7 +1024,7 @@ body {
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 720px;
+        width: 768px;
     }
 
     .header-content__item {
@@ -1061,6 +1061,9 @@ body {
     .footer-content {
         justify-content: center;
     }
+    .team-item:nth-child(even) {
+        margin-left: 24px;
+    }
 }
 @media screen and (min-width: 1200px) {
     .container {
@@ -1086,6 +1089,14 @@ body {
         width: 169px;
         margin: 0 auto;
         margin-top: 48px;
+    }
+
+    .portfolio-item__link {
+        width: 360px;
+    }
+
+    .header-contacts__link {
+        font-size: 14px;
     }
 }
 
@@ -1117,11 +1128,11 @@ body {
         justify-content: center;
     }
 
-    .team-item:nth-child(even) {
+    /* .team-item:nth-child(even) {
         margin-left: 24px;
     }
-
-    .team-item {
+*/
+    .team-item:nth-child(-n + 2) {
         margin-bottom: 72px;
     }
 
@@ -1138,7 +1149,7 @@ body {
         margin-left: 24px;
     }
 
-    .costumers-item + .costumers-item {
+    .costumers-item:nth-child(-n + 4) {
         margin-bottom: 72px;
     }
 }
@@ -1147,6 +1158,10 @@ body {
     .costumers-list {
         width: 373px;
         margin: 0 auto;
+    }
+
+    .mobile-menu {
+        box-shadow: rgba(117, 117, 117, 0.5);
     }
     .mobile-menu__contact-list {
         width: 337px;
@@ -1163,8 +1178,11 @@ body {
         margin: 0 auto;
     }
 
-    .header-content__item + .header-content__item {
+    .header-content__item:nth-child(even) {
         margin-left: 0;
+    }
+
+    .header-content__item:nth-child(odd) {
         margin-bottom: 72px;
     }
 
@@ -1172,7 +1190,11 @@ body {
         width: 264px;
         margin: 0 auto;
     }
+
     .team-item {
+        margin-left: 0;
+    }
+    .team-item:not(:last-child) {
         margin-bottom: 72px;
     }
 
@@ -1252,10 +1274,12 @@ body {
     .costumers-list {
         display: block;
     }
-
-    .costumers-item {
-        margin-left: 16px;
+    .costumers-item:nth-child(-n + 4) {
         margin-bottom: 72px;
+    }
+
+    .costumers-item:nth-child(odd) {
+        margin-left: 0px;
     }
 }
 
